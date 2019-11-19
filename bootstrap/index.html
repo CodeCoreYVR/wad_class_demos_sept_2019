@@ -616,10 +616,25 @@
                 aperiam atque.
             </div>
         </div>
+
+        <!-- Tooltip -->
+        <h1 class="pb-2 mt-4 mb-2 border-bottom main-color" data-toggle="tooltip"
+            title="I am tooltip hint. I am written inside title attribute">
+            Hover me I am a tooltip
+        </h1>
+        
+        <!-- Popover -->
+        <button class="btn btn-success" data-target="popover" title="popover title" data-content="I am popover content">
+            Popover
+        </button>
       <!-- Just adding a scroll to the page -->
       <div class="scroll">
         Just to add a scroll
       </div>
     </div>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    })
   </body>
 </html>
