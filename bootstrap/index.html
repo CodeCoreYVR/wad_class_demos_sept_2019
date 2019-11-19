@@ -24,347 +24,58 @@
         height: 500em;
       }
 
-      .container {
+      .col {
+        text-align: center;
+        border: 1px solid black;
+      }
+      .main-container {
         margin-top: 80px;
+      }
+      .col-sm-4,
+      .col-sm-8,
+      .col {
+        height: 50px;
       }
     </style>
   </head>
 
   <body style="text-align:center;">
-    <div class="container">
-      <!-- Basic Navigation Bar -->
-      <h1 class="main-color">Basic Navigation Bar</h1>
-      <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
+    <div class="container main-container">
+      <h1 class="main-color">three column grid</h1>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Vertical Navbar  -->
-      <h1 class="main-color">Vertical Navbar</h1>
-      <nav class="navbar navbar-expand-xl|lg|md|sm">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Centered Navbar -->
-      <h1 class="main-color">Centered Navbar</h1>
-      <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Colored Navigation Bar -->
-      <h1 class="main-color">Colored Navbar</h1>
-      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <br /><br />
-
-      <nav class="navbar navbar-expand-sm bg-success navbar-light">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Navigation Bar with Brand/Logo -->
-      <h1 class="main-color">Brand/Log Navbar</h1>
-      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <a class="navbar-brand" href="#">Codecore</a>
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <br /><br />
-      <nav class="navbar navbar-expand-sm bg-success navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="./images/cc-logo-1.jpeg" alt="logo" style="width:40px;" />
-        </a>
-
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Collapsing Navigation Bar -->
-      <h1 class="main-color">Collapsing Nabar</h1>
-      <nav class="navbar navbar-expand-sm bg-success navbar-light">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="images/cc-logo-1.jpeg" alt="logo" style="width:40px;" />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapse_Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_Navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Algo</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">DS</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Languages</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            column 1
+          </div>
+          <div class="col">
+            column 2
+          </div>
+          <div class="col">
+            column 3
+          </div>
         </div>
-      </nav>
+      </div>
 
-      <!-- Navigation Bar with dropdown -->
-      <h1 class="main-color">Navbar with dropdown</h1>
-      <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="./images/cc-logo-1.jpeg" alt="logo" style="width:40px;" />
-        </a>
+      <h1 class="main-color">Equal column responsive grid</h1>
+      <p class="text-warning">
+        When creen devices less than 576px, columns automatically stack on each
+        other
+      </p>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapse_Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_Navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Algo</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">DS</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbardrop"
-                data-toggle="dropdown"
-              >
-                Languages
-              </a>
-
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12" style="background-color: green">
+            column1
+          </div>
+          <div class="col-lg-4 col-sm-12" style="background-color: yellow">
+            column2
+          </div>
+          <div class="col-lg-4 col-sm-12" style="background-color: red">
+            column3
+          </div>
         </div>
-      </nav>
-
-      <!-- Navigation Bar with forms and buttons -->
-      <h1 class="main-color">Navbar with forms and buttons</h1>
-      <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="./images/cc-logo-1.jpeg" alt="logo" style="width:40px;" />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapse_Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_Navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Algo</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">DS</a>
-            </li>
-          </ul>
-        </div>
-
-        <form class="form-inline" action="#">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-          />
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>
-      </nav>
-
-      <!-- Fixed Navbar -->
-      <!--  
-      <h1 class="main-color">Fixed Navbar</h1>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
-      -->
-
-      <!-- Sticky Navbar -->
-      <h1 class="main-color">Sticky Navba</h1>
-      <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Algo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">DS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Languages</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
 
       <div class="scroll">
         Just to add a scroll to the page
