@@ -3,6 +3,7 @@
     color: white;
 }
 
+/* Relative Positioning */
 .first-box {
     background-color: maroon;
 }
@@ -16,4 +17,136 @@
 
 .third-box {
     background-color: darkslateblue;
+}
+
+/* Move the word 'word' to the next line */
+span.word {
+    position: relative;
+    top: 35px;
+    right: 80px;
+}
+
+/* Absolute Positioning */
+
+.parent {
+    /* 
+    if we don't position this element
+    the top, right, bottom, left properties for the absolute positioned elements
+    inside it will be computed accodring to the next nearst ancestor
+    */
+    position: relative;
+}
+
+.absolute-positioned {
+    background-color: orange;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+/* Fixed position */
+.fixed-element {
+    background-color: orange;
+    width: 4em;
+    font-size: 2em;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.fixed-element:hover {
+    background-color: black;
+    color: white;
+}
+
+/* sticky position */
+.sticky-menu {
+    background-color: teal;
+    padding: 5px;
+    position: sticky;
+    top: 10px;
+    width: 50%;
+    /* first exercise */
+    /* z-index: 2;  */
+    /* second exercise */
+    z-index: 4;
+}
+
+/* Float */
+.float-left {
+    background-color: maroon;
+    float: left;
+}
+
+.float-right {
+    background-color: green;
+    float: right;
+    height: 200px;
+    border: 5px solid black;
+}
+
+.clear-floating {
+    border: 5px solid brown;
+    clear: none; /* default */
+    /* clear: left; */ /* clearing according to the floated left element */
+    /* clear: right; */ /* clearing according to the floated right element */
+    clear: both; /* clearing according to the floated left and right elements */
+    /* margin-top: 100px;  */
+    /* The above margin will be counted from the top of floated elements */
+    /* therefore, its effect will only appear if it's more than the height of the floated elements */
+}
+
+/* z-index */
+.indexed-box1 {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    top: 1em;
+    left: 8em;
+    background-color: cadetblue;
+    z-index: 2;
+}
+
+.inner-box1 {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    background-color: turquoise;
+    z-index:3;
+}
+
+.inner-box2 {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    background-color: tomato;
+    top: -2em;
+    left: 3em;
+    z-index:2;
+}
+
+.inner-box3 {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    background-color: darkcyan;
+    top: -4em;
+    left: 5em;
+    z-index: 1;
+}
+
+.indexed-box2 {
+    position: relative;
+    width: 8em;
+    height: 8em;
+    top: -4em;
+    left: 12em;
+    background-color: #666;
+    z-index: 1;
+}
+
+.scroll {
+    height: 2000px;
+    background-color: whitesmoke;
 }
