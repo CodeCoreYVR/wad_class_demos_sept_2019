@@ -1,0 +1,19 @@
+.shared {
+    font-size: 2em;
+    color: white;
+}
+
+.first-box {
+    background-color: maroon;
+}
+
+.second-box {
+    background-color: coral;
+    position: relative; /* top, left, right, bottom will be activiated */
+    /* top: 2.5em;
+    left: 2.5em; */
+}
+
+.third-box {
+    background-color: darkslateblue;
+}
